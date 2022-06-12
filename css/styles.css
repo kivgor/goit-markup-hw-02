@@ -1,10 +1,10 @@
 :root {
     --primary-text-color: #212121;
     --main-title-text-color: #FFFFFF;
-    --title-text-color: #2196f3;
     --secondary-text-color: #757575;
-    --hover-text-color: #ffffff;
+    --title-text-color: #2196f3;
     --hover-background-color: #2196f3;
+    --hover-text-color: #ffffff;
     --primary-body-color: #ffffff;
     --accent-body-color: #2f303a;
 }
@@ -12,14 +12,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;    
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     background-color: var(--primary-body-color);
     color: var(--primary-text-color);
-    padding-top: 25px;
-    padding-left: 215px;
-    padding-right: 215px;
 }
 
 .list {
@@ -32,6 +27,11 @@ body {
     color: var(--primary-text-color);
 }
 
+.current-link {
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+
 .link:hover,
 .link:focus {
     color: var(--title-text-color);
@@ -40,7 +40,8 @@ body {
 /* header */
 header {
     display: flex;
-    align-items: center;
+    align-items: center; 
+    padding-left: 215px;
 }
 
 nav {
@@ -59,8 +60,8 @@ nav {
     font-size: 26px;
     line-height: 1.17;
     font-weight: 700;
-    text-decoration: none;
-    margin-right: 95px;
+    text-decoration: none;    
+    padding-left: 35px;
 }
 
 span.logo-font-color {
@@ -84,21 +85,23 @@ span.logo-font-color {
     cursor: pointer;
     font-size: 16px;
     line-height: 1.63;
-    border: none;    
+    border: none;
 }
+
 .order-button {
     background-color: var(--hover-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    height: 50px;      
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 3.13;         
+    line-height: 3.13;
     color: #FFFFFF;
 }
+
 .order-button:hover,
-.order-button:focus{
-    background-color:#ffffff;
+.order-button:focus {
+    background-color: #ffffff;
     color: var(--primary-text-color);
 }
 
@@ -116,25 +119,25 @@ span.logo-font-color {
 
 .title {
     text-align: center;
-    margin-top: 94px;    
+    margin-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;    
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.font-our-team {    
+.font-our-team {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;    
+    line-height: 19px;
     text-align: center;
-    letter-spacing: 0.03em;    
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.job-our-team {    
+.job-our-team {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -144,21 +147,25 @@ span.logo-font-color {
 }
 
 .title-section {
-    background-color: var(--accent-body-color); 
-    height: 600px;  
+    background-color: var(--accent-body-color);
+    height: 600px;
     text-align: center;
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle    
+}
+
+main {
+    padding-left: 215px;
 }
 
 .main-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     color: var(--main-title-text-color);
-    padding-left:350px;
-    padding-right:350px;
+    padding-left: 350px;
+    padding-right: 350px;
 }
 
 .hidden-caption {
@@ -170,22 +177,22 @@ span.logo-font-color {
     align-items: center;
 }
 
-.list-job{
+.list-job {
     display: flex;
     align-items: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.title-our-features {    
+.title-our-features {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     color: var(--primary-text-color);
-
 }
-.text-our-features {    
+
+.text-our-features {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -193,7 +200,7 @@ span.logo-font-color {
     color: #757575;
 }
 
-.our-jobs{
+.our-jobs {
     display: flex;
     align-items: center;
 }
@@ -203,14 +210,14 @@ span.logo-font-color {
     align-items: center;
 }
 
-.portfolio-title {    
+.portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-text {    
+.portfolio-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -219,17 +226,29 @@ span.logo-font-color {
 }
 
 /* footer */
-.footer {
-    background-color: var(--accent-body-color);    
+footer {
+    background-color: var(--accent-body-color);
+    padding-left: 215px;  
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.footer-site-nav {
+.footer-site-map {
+    text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    color: #ffffff;    
+    color: #FFFFFF;
+}
+
+.footer-site-nav {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 span.footer-logo-font-color {
-    color: #ffffff;    
+    color: #ffffff;
 }
