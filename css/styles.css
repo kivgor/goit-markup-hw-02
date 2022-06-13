@@ -41,7 +41,7 @@ body {
 header {
     display: flex;
     align-items: center; 
-    padding-left: 215px;
+    
 }
 
 nav {
@@ -71,6 +71,7 @@ span.logo-font-color {
 .site-nav {
     line-height: 1.17;
     font-style: normal;
+    font-weight: 500;
 }
 
 .contacts-nav {
@@ -163,9 +164,7 @@ main {
     font-size: 44px;
     line-height: 60px;
     text-transform: uppercase;
-    color: var(--main-title-text-color);
-    padding-left: 350px;
-    padding-right: 350px;
+    color: var(--main-title-text-color);      
 }
 
 .hidden-caption {
