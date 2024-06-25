@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-HW-02
+# goit-markup-hw-01
+Макет сторінки Web Studio
