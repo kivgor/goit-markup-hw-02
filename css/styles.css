@@ -31,6 +31,11 @@ a {
     color: #2e2f42;
 }
 
+.footer-logo .logo-part {
+    color: #f4f4fd;
+    ;
+}
+
 .logo-part {}
 
 .nav-list {}
@@ -72,7 +77,6 @@ a {
 }
 
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -98,38 +102,34 @@ a {
 
 .about {}
 
-.about-title {}
-
 .about-list {}
 
 .about-item {}
-
-.about-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.about-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 
 .team {
     background-color: #f4f4fd;
 }
 
-.team-title {
-    font-weight: 700;
+.about-title,
+.team-title,
+.portfolio-title {
     font-size: 36px;
     line-height: 1.11111;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #2e2f42;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .team-list {}
@@ -138,38 +138,8 @@ a {
 
 .team-img {}
 
-.team-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.team-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.portfolio {}
-
-.portfolio-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.portfolio-list {}
-
-.portfolio-item {}
-
-.portfolio-img {}
-
+.about-subtitle,
+.team-subtitle,
 .portfolio-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -178,16 +148,29 @@ a {
     color: #2e2f42;
 }
 
-.portfolio-text {
-    font-weight: 400;
+.about-text,
+.team-text,
+.portfolio-text,
+.footer-text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    letter-spacing: 0.02em;    
 }
 
-.footer {}
+.portfolio {}
+
+.portfolio-list {}
+
+.portfolio-item {}
+
+.portfolio-img {}
+
+.footer {
+    background-color: #2e2f42;
+}
 
 .footer-logo {}
 
-.footer-text {}
+.footer-textcolor {    
+    color: #f4f4fd;
+}
